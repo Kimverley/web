@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimverley's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+     <header class="navbar">
+        <div class="nav">
+            <div class="logo">Kimverley Herrera</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+     </header>
+    
+    <!-- HERO -->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bring thoughts to life <br><span>through code & design</span></h1>
+            <p>Hello! I'm Kimverley Herrera, a student web developer creating websites.</p>
+            
+            <div class="hero-buttons">
+                <a href="project.html" class="btn">View My Work</a>
+                <a href="#contact" class="btn-line">Get in Touch</a>
+
+            </div>
+        </div>
+     </section>
+    <!-- ABOUT -->
+     <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <div class="about-card">
+            <img src="profile.jpg" alt="Profile Picture" class="zoomed">
+            <div>
+                <p>I"m a West-mec coding student passionate about becoming a front-end developer</p>
+                <p><strong>Skills:</strong> Html, CSS, JavaScript</p>
+                <p><strong>Fun fact:</strong> I love drawing 🎨 </p>
+            </div>
+        </div>
+
+     </section>
+    <!-- PROJECT -->
+     <section id="project" class="project">
+        <h2>Projects/Portfolio</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Student Grade checker</h3>
+                <p>Single-page student-portal built with HTML & CSS. </p>
+                <a href=" ">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Blog Page</h3>
+                <p>Simple blog layout used with  css grid.</p>
+                <a href=" ">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Photo Collage</h3>
+                <p>An responsive image gallery app for using css grid properties.</p>
+                <a href=" ">View More</a>
+            </div>
+            
+            <a href="project.html" class="btn-line proj-btn">View More Projects</a>
+        </div>
+     </section>
+    <!-- CONTACT -->
+     <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Main Street, City Name, Country</p>
+                <p><strong>Email:</strong> <a href="mailto:student@example.com">kherre719@west-mec.org</a></p>
+                <p><strong>Phone:</strong> +1 (408) 220-8917</p>
+            </div>
+
+            <div class="social-icons">
+            <a href="https://github.com/Kimverley">Github</a>
+            </div>
+
+        </div>
+
+
+     </section>
+
+    <!-- FOOTER -->
+     <footer>
+        <p>&copy; 2026 Kimverley Herrera Mejia. All Rights Reserved.</p>
+     </footer>
+</body>
+</html>
+
+<!-- 
+(for my project card Contact form)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Pattern Attribute</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(242, 247, 251); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: rgb(255, 255, 255); 
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(51, 51, 51); 
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 12px; 
+            border: 1px solid rgb(204, 204, 204); 
+            border-radius: 5px;
+            font-size: 16px; 
+            width: 100%; 
+        }
+
+        textarea {
+           
+            min-height: 120px; 
+        }
+
+        input:focus, textarea:focus {
+            border-color: rgb(13, 158, 57); 
+            outline: none;
+        }
+
+        button {
+            background-color:rgb(13, 158, 57); 
+            color: rgb(255, 255, 255); 
+            border: none;
+            padding: 12px; 
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(0, 76, 153); 
+        }
+
+        fieldset {
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"
+                    pattern="[A-Za-z ]{3,30}"
+                    title="Name should only contain letters and spaces (3-30 characters)"
+                    placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    title="Phone number must be in format 123-456-7890"
+                    placeholder="123-456-7890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"
+                    placeholder="Write your message here..." required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+ -->
